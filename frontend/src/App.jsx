@@ -26,7 +26,7 @@ const [user, setUser] = useState({
 
   const getUsers=async()=>{
     try {
-      const response = await axios.get('http://localhost:5000/api/user');
+      const response = await axios.get('https://login-design.onrender.com/api/user');
       setallUsers(response.data);
     } catch (error) {
       console.error('Error fetching users:', error);
