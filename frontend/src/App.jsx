@@ -15,7 +15,7 @@ const [user, setUser] = useState({
   const handleSubmit=async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/user', user);
+      const response = await axios.post('https://login-design.onrender.com/api/user', user);
       console.log('Data submitted successfully:', response.data);
     } catch (error) {
       console.error('Error submitting data:', error);
